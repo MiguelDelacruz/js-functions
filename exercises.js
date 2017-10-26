@@ -48,7 +48,7 @@ var bango2 = 4;
 function add(num1,num2) {
 	return num1 + num2;
 }
-var sum = add(3,4);
+var sum = add(bango1,bango2);
 console.log(sum);
 
 /*
@@ -68,7 +68,7 @@ console.log(sum);
 function subrtact(num1,num2) {
 	return num1 - num2;
 }
-var difference = subrtact(3,4);
+var difference = subrtact(bango1,bango2);
 console.log(difference);
 
 /*
@@ -125,7 +125,7 @@ console.log(quotient);
 function checksum(x) {
 	return "Mariah Carey has been married " + x + " amount of times."
 }
-console.log(checksum(4000));
+console.log(checksum(sum));
 
 /*
  * #7
@@ -142,7 +142,7 @@ console.log(checksum(4000));
 function checkDifference(x) {
 	return "last night I dreamt that I ate " + x + " Taco Bell soft tacos"
 }
-console.log(checkDifference(7));
+console.log(checkDifference(difference));
 /*
  * #8
  * Function - checkProduct
@@ -155,9 +155,9 @@ console.log(checkDifference(7));
 */
 
 function checkProduct() {
-	return sum * product;
+	console.log(sum * product);
 }
-console.log(checkProduct(3,4));
+console.log()
 
 /*
  * #9
@@ -171,9 +171,9 @@ console.log(checkProduct(3,4));
 */
 
 function checkQuotient() {
- 	return product * quotient;
+console.log(product * quotient);
 }
-console.log(checkQuotient(3,4));
+console.log();
 /*
  * #10
  * Function - addThenSubtract
@@ -198,9 +198,9 @@ var bango4 = 1;
 var bango5 = 6;
 
 function addThenSubtract(num1,num2,num3) {
-	return num1 + num2 + num3;
+	return num3 - (num1 + num2);
 }
-console.log(sum(difference(7,1,6)));
+addThenSubtract(bango3,bango4,bango5);
 /*
  * #11
  * Function - multiplyThenDivide
@@ -215,10 +215,11 @@ console.log(sum(difference(7,1,6)));
  * Console.log your result.
 */ 
 
+
 function multiuplyThenDivide(num1,num2,num3) {
-	return num1 * num2 * num3;
+	return num1 * (num2 / num3);
 }
-console.log(product(quotient(7,1,6)))
+multiuplyThenDivide(bango3,bango4,bango5)
 /*
  * #12
  * Function - createFullName
@@ -230,14 +231,14 @@ console.log(product(quotient(7,1,6)))
  *
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
-
-function createFullName(firstName,lastName) {
-return firstName  + lastName;
-}
 var firstName = "Miguel"
 var lastName = "Delacruz"
 var myFullName = "Miguel Delacruz"
-console.log(myFullName(firstName,lastName));
+
+function createFullName(firstName,lastName) {
+return firstName + lastName;
+}
+createFullName("Miguel","Delacruz");
 
 /*
  * #13 
@@ -256,7 +257,7 @@ var food = "sushi"
 function eatFood(firstName,lastName,food) {
 	return firstName + lastName + " likes to eat " + food;
 }
-console.log(createFullName(eatFood));
+console.log(eatFood("Miguel","Delacruz","sushi"));
 
 
 /************** ENGAGE HYPERDRIVE **************/
@@ -275,7 +276,7 @@ var inches = 8
 function shoeSize(inches) {
 	return inches;
 }
-console.log(shoeSize)
+console.log(shoeSize);
 
 /*
  * #15
@@ -288,10 +289,9 @@ console.log(shoeSize)
 */
  
 function allCAPS(str) {
-	return 
-
+	return str.toUpperCase();
 }
-
+allCAPS("turn this sentence into all caps!");
 /*
  * #16
  * Function oneCap
