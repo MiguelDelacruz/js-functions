@@ -157,7 +157,7 @@ console.log(checkDifference(difference));
 function checkProduct() {
 	console.log(sum * product);
 }
-console.log()
+console.log(checkProduct);
 
 /*
  * #9
@@ -276,7 +276,7 @@ var inches = 8
 function shoeSize(inches) {
 	return inches;
 }
-console.log(shoeSize);
+shoeSize(inches)
 
 /*
  * #15
