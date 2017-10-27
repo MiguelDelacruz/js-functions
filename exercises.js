@@ -154,10 +154,10 @@ console.log(checkDifference(difference));
  * Console.log your result.
 */
 
-function checkProduct() {
+function checkProduct(sum,product) {
 	console.log(sum * product);
 }
-console.log(checkProduct);
+console.log(checkProduct(sum,product));
 
 /*
  * #9
@@ -170,10 +170,10 @@ console.log(checkProduct);
  * Console.log your result.
 */
 
-function checkQuotient() {
+function checkQuotient(product,quotient) {
 console.log(product * quotient);
 }
-console.log();
+console.log(checkQuotient(product,quotient));
 /*
  * #10
  * Function - addThenSubtract
@@ -200,7 +200,7 @@ var bango5 = 6;
 function addThenSubtract(num1,num2,num3) {
 	return num3 - (num1 + num2);
 }
-addThenSubtract(bango3,bango4,bango5);
+console.log(addThenSubtract(bango3,bango4,bango5));
 /*
  * #11
  * Function - multiplyThenDivide
@@ -219,7 +219,7 @@ addThenSubtract(bango3,bango4,bango5);
 function multiuplyThenDivide(num1,num2,num3) {
 	return num1 * (num2 / num3);
 }
-multiuplyThenDivide(bango3,bango4,bango5)
+console.log(multiuplyThenDivide(bango3,bango4,bango5));
 /*
  * #12
  * Function - createFullName
@@ -238,7 +238,7 @@ var myFullName = "Miguel Delacruz"
 function createFullName(firstName,lastName) {
 return firstName + lastName;
 }
-createFullName("Miguel","Delacruz");
+console.log(createFullName("Miguel","Delacruz"));
 
 /*
  * #13
@@ -276,7 +276,7 @@ var inches = 8
 function shoeSize(inches) {
 	return inches;
 }
-shoeSize(inches)
+console.log(shoeSize(inches));
 
 /*
  * #15
@@ -291,7 +291,7 @@ shoeSize(inches)
 function allCAPS(str) {
 	return str.toUpperCase();
 }
-allCAPS("turn this sentence into all caps!");
+console.log(allCAPS("turn this sentence into all caps!"));
 /*
  * #16
  * Function oneCap
@@ -300,9 +300,9 @@ allCAPS("turn this sentence into all caps!");
  * Console.log your result.
 */
 function oneCap(str) {
-    return str.charAt(0).toUpperCase() + string.slice(1);
+    return str[0].toUpperCase() + str.substr(1);
 }
-oneCap("the first letter is caps!!")
+console.log(oneCap("the first letter is caps!!"));
 
 /*
  * #17
@@ -318,7 +318,8 @@ var canDrink = 21;
 var age = 17;
 function verifyDrinkAge(age) {
 	return canDrink;
-console.log(canDrink)
+}
+console.log(canDrink);
 /**
  * #18
  * Function - throwParty
@@ -327,9 +328,10 @@ console.log(canDrink)
 var canDrink = 21
 function throwParty(canDrink) {
 	if (true) {
-		return "Cheee Hoo! We going to da party!";
+		return "Cheee Hoo! We going to da party!"
 	}
-
-	if (false)
-	return "Meh, see you at Starbucks."
-}
+	if (false) {
+		return "Meh, see you at Starbucks."
+	}	
+ }
+ console.log(throwParty(canDrink));
