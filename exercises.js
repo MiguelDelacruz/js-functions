@@ -325,12 +325,12 @@ console.log(verifyDrinkAge(canDrink));
  * Function - throwParty
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
-var canDrink = 21
+ var canDrink = true; 
 function throwParty(canDrink) {
 	if (true) {
 		return "Cheee Hoo! We going to da party!"
 	}
-	if (false) {
+	else {
 		return "Meh, see you at Starbucks."
 	}	
  }
