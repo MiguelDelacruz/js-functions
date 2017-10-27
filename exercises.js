@@ -319,7 +319,7 @@ var age = 17;
 function verifyDrinkAge(age) {
 	return canDrink;
 }
-console.log(canDrink);
+console.log(verifyDrinkAge(canDrink));
 /**
  * #18
  * Function - throwParty
